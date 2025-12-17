@@ -2,7 +2,13 @@
 const nextConfig = {
   reactCompiler: true,
   images: {
-    domains: ['www.educative.io'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'www.educative.io',
+        pathname: '/**',
+      },
+    ],
   },
 };
 
