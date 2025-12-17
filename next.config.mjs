@@ -1,11 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactCompiler: true,
-
-  allowedDevOrigins: [
-    '.educative.run',
-  ],
-
   images: {
     remotePatterns: [
       {
