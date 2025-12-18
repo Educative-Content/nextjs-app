@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactCompiler: true,
+  
+  allowedDevOrigins: [
+  process.env.EDUCATIVE_LIVE_VM_URL?.replace(/^https?:\/\//, ''),
+  ],
+  
   images: {
     remotePatterns: [
       {
